@@ -12,8 +12,8 @@ How my algo works:
 5. When moving you have to compare elements whith a median value. Every element whis is less than median goes
 to the top of stack B, elements bigger than median go to the bottom part.
 6. Now we have to merge both stacks. At every step we have to choose which element in stack B requires less
-moves to get back to stack A to its right position (to keep stack A sorted)
-We choose element using scoring approach: every element gets two scores:
+moves to get back to stack A to its right position (to keep stack A sorted).
+We choose element using scoring approach, every element gets two scores:
 - number of rotations to get this element to the top of stack B
 - number of rotations of stack A to provide right position for this element
 After assigning score we have to pick element with minimal total score.
